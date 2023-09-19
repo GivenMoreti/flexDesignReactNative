@@ -1,0 +1,145 @@
+//import * as ImagePicker from 'expo-image-picker';
+import { useState, useRef } from 'react';
+import { StyleSheet, Text, View, Image, Button } from 'react-native';
+//custom imports
+// import ImageViewer from './components/ImageViewer';
+// import Button from './components/Button';
+// import CircleButton from './components/CircleButton';
+// import IconButton from './components/IconButton';
+// import ModalContent from './components/ModalContent';
+// import * as MediaLibrary from 'expo-media-library'; //taking a screenshot func
+// import { captureRef } from 'react-native-view-shot';
+// import { FlatList } from 'react-native-gesture-handler';
+
+
+
+export default function App() {
+
+
+  return (
+    <View style={styles.container}>
+       {/* start container 1 */}
+      <View style={styles.container1}>
+        <View style={styles.view1}>
+          <Text> 1</Text>
+        </View>
+
+        <View style={styles.view2}>
+          <Text> 2</Text>
+        </View>
+
+        <View style={styles.view3}>
+          <Text> 3</Text>
+        </View>
+      </View>
+      {/* start container 2 */}
+      <View style={styles.container2}>
+        <View style={styles.view4}>
+          <Text> 4</Text>
+        </View>
+
+        <View style={styles.view5}>
+          <Text> 5</Text>
+        </View>
+      </View>
+      {/* start container 3 */}
+      <View style={styles.container3}>
+  
+        <View style={styles.view6}>
+          <Text> 6</Text>
+        </View>
+
+        <View style={styles.view7}>
+          <Text> 7</Text>
+        </View>
+      </View>
+    </View>
+
+  );
+}
+
+const styles = StyleSheet.create({
+  constainer:{
+    flex:1,
+    flexDirection:'col',
+    alignItems:'center',
+    justifyContent:'center',
+
+  },container1:{
+   
+    flexDirection:'row',
+    justifyContent:'flex-start',
+    alignItems:'center',
+
+  },
+  container2:{
+  
+    justifyContent:'flex-start',
+    alignItems:'stretch',
+  },container3:{
+  
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'flex-end',
+  }
+  
+  ,view1:{
+    flex:1,
+    height:100,
+    width:100,
+    backgroundColor:"red",
+    justifyContent:'center',
+    alignItems:'center',
+  },view2:{
+    flex:2,
+    height:100,
+    width:100,
+    backgroundColor:"blue",
+    justifyContent:'center',
+    alignItems:'center',
+  }
+
+  ,view3:{
+    flex:3,
+    height:100,
+    width:100,
+    backgroundColor:"green",
+    justifyContent:'center',
+    alignItems:'center',
+  }
+  ,view4:{
+    backgroundColor:"tomato",
+    justifyContent:'center',
+    alignItems:'center',
+    height:100,
+  }
+  ,view5:{
+    backgroundColor:"yellow",
+    justifyContent:'center',
+    alignItems:'center',
+    height:100,
+  },view6:{
+    flex:1,
+    backgroundColor:"pink",
+    height:600,
+    width:100,
+    justifyContent:'center',
+    alignItems:'center',
+
+  },view7:{
+    flex:1,
+    backgroundColor:"brown",
+    height:600,
+    width:100,
+    justifyContent:'center',
+    alignItems:'center',
+  }
+  
+
+
+
+
+  
+
+
+});
